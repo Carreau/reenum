@@ -1,5 +1,6 @@
 language: python
 python: 
     - "nightly"
+    - "3.6-dev"
 script:
     - export PYTHONWARNINGS='ignore'; python -c 'print(1)'
