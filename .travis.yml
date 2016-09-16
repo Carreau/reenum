@@ -3,4 +3,5 @@ python:
     - "nightly"
     - "3.6-dev"
 script:
+    - python -c 'import sys; print(sys._mercurial)'
     - export PYTHONWARNINGS='ignore'; python -c 'print(1)'
