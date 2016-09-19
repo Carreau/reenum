@@ -5,9 +5,10 @@ python:
 script:
     - ls /opt/python
     - ls /opt/python/nightly
-    - ls /opt/python/nightly/3.6-dev
+    - ls /opt/python/3.6-dev
     - which python
     - ls -al $(which python)
+    - /opt/python/nightly/bin/python -v
     - ls $HOME/virtualenv
     - ls $TRAVIS_BUILD_DIR
     - python -c 'import sys; print(sys._mercurial)'
