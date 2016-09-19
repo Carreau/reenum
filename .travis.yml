@@ -8,7 +8,7 @@ script:
     - ls /opt/python/3.6-dev
     - which python
     - ls -al $(which python)
-    - /opt/python/nightly/bin/python -v
+    - /opt/python/nightly/bin/python --version  
     - ls $HOME/virtualenv
     - ls $TRAVIS_BUILD_DIR
     - python -c 'import enum ; print(enum.__file__)'
