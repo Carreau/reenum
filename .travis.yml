@@ -11,5 +11,6 @@ script:
     - /opt/python/nightly/bin/python -v
     - ls $HOME/virtualenv
     - ls $TRAVIS_BUILD_DIR
+    - python -c 'import enum ; print(enum.__file__)'
     - python -c 'import sys; print(sys._mercurial)'
     - export PYTHONWARNINGS='ignore'; python -c 'print(1)'
