@@ -4,6 +4,10 @@ python:
     - "3.6-dev"
 script:
     - ls /opt/python
+    - ls /opt/python/nightly
+    - ls /opt/python/nightly/3.6-dev
+    - which python
+    - ls -al $(which python)
     - ls $HOME/virtualenv
     - ls $TRAVIS_BUILD_DIR
     - python -c 'import sys; print(sys._mercurial)'
