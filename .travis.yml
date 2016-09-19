@@ -4,5 +4,7 @@ python:
     - "3.6-dev"
 script:
     - ls /opt/python
+    - ls $HOME/virtualenv
+    - ls $TRAVIS_BUILD_DIR
     - python -c 'import sys; print(sys._mercurial)'
     - export PYTHONWARNINGS='ignore'; python -c 'print(1)'
